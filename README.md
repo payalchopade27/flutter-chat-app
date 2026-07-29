@@ -6,23 +6,29 @@ A modern real-time messaging application built using **Flutter**, **Firebase**, 
 
 ## 🚀 Overview
 
-Flutter Chat App is a cross-platform messaging application developed to gain hands-on experience in Flutter development and backend integration.
+Flutter Chat App is a cross-platform messaging application developed to strengthen my Flutter development skills while exploring backend integration with Firebase.
 
-The project demonstrates secure user authentication, real-time communication, cloud database integration, image uploading, and responsive UI design.
+The project demonstrates:
 
-One of the major improvements made in this project was replacing **Firebase Storage** with **Cloudinary** for image uploads due to Firebase Storage billing requirements while keeping Firebase Authentication and Firestore intact.
+- Secure user authentication
+- Real-time messaging
+- Cloud database integration
+- Image uploading
+- Responsive UI design
+
+To avoid Firebase Storage billing requirements, image uploads were implemented using **Cloudinary** while continuing to use **Firebase Authentication** and **Cloud Firestore**.
 
 ---
 
 ## ✨ Features
 
-- 🔐 Secure User Authentication
+- 🔐 Secure Authentication
 - 👤 User Registration & Login
-- 💬 Real-Time Messaging
-- 🖼 Image Sharing using Cloudinary
+- 💬 Real-Time One-to-One Messaging
+- 🖼 Image Sharing with Cloudinary
 - ☁ Cloud Firestore Integration
-- 📱 Clean & Responsive Material Design UI
-- ⚡ Fast Real-Time Updates
+- 📱 Responsive Material UI
+- ⚡ Instant Message Updates
 - 🔒 Secure Cloud-Based Backend
 
 ---
@@ -47,65 +53,83 @@ One of the major improvements made in this project was replacing **Firebase Stor
 
 ## 📦 Packages Used
 
+- firebase_core
 - firebase_auth
 - cloud_firestore
 - cloudinary_public
 - image_picker
-- firebase_core
-- flutter
 
 ---
 
 ## 🏗 Architecture
 
-```
+```text
 Flutter App
       │
-      │
+      ▼
 Firebase Authentication
       │
-      │
+      ▼
 Cloud Firestore
       │
-      │
+      ▼
 Cloudinary
 ```
 
 ---
 
+# 📸 Screenshots
+
+<table>
+<tr>
+<td align="center">
+<b>Login Screen</b><br><br>
+<img src="assets/screenshots/login_screen.jpeg" width="250"/>
+</td>
+
+<td align="center">
+<b>Sign Up & Image Upload</b><br><br>
+<img src="assets/screenshots/sign_up_and_image_upload_screen.jpeg" width="250"/>
+</td>
+</tr>
+
+<tr>
+<td align="center">
+<b>Chat Screen</b><br><br>
+<img src="assets/screenshots/chats.jpeg" width="250"/>
+</td>
+
+<td align="center">
+<b>Profile Screen</b><br><br>
+<img src="assets/screenshots/profile.jpeg" width="250"/>
+</td>
+</tr>
+
+<tr>
+<td colspan="2" align="center">
+<b>Dark Mode Chat</b><br><br>
+<img src="assets/screenshots/darkmode_chats.jpeg" width="250"/>
+</td>
+</tr>
+</table>
+
+---
+
 ## 📂 Project Structure
 
-```
+```text
 lib/
 │
 ├── screens/
 │   ├── auth/
-│   ├── chat/
+│   └── chat/
 │
 ├── widgets/
-│
-├── models/
-│
 ├── services/
-│
+├── models/
 ├── utils/
-│
 └── main.dart
 ```
-
----
-
-## 📸 Screenshots
-
-> Screenshots will be added soon.
-
-| Login | Chat |
-|-------|------|
-| Image | Image |
-
-| Image Upload | Signup |
-|--------------|---------|
-| Image | Image |
 
 ---
 
@@ -114,22 +138,22 @@ lib/
 ### Clone Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/flutter-chat-app.git
+git clone https://github.com/payalchopade27/flutter-chat-app.git
 ```
 
-### Go to Project
+### Navigate to Project
 
 ```bash
 cd flutter-chat-app
 ```
 
-### Install Packages
+### Install Dependencies
 
 ```bash
 flutter pub get
 ```
 
-### Run Application
+### Run the Application
 
 ```bash
 flutter run
@@ -141,27 +165,27 @@ flutter run
 
 During development, Firebase Storage required enabling billing for image uploads.
 
-Instead of relying on Firebase Storage, **Cloudinary** was integrated for image storage while continuing to use:
+Instead of enabling Firebase Storage billing, **Cloudinary** was integrated for image uploads while continuing to use:
 
 - Firebase Authentication
 - Cloud Firestore
 
-This reduced cost constraints and maintained the application's functionality.
+This approach maintained all application functionality while avoiding additional cloud storage costs.
 
 ---
 
 ## 🎯 Learning Outcomes
 
-This project helped strengthen my understanding of:
+This project helped me gain practical experience in:
 
-- Flutter UI Development
+- Flutter App Development
 - Firebase Authentication
 - Cloud Firestore
 - Cloudinary Integration
 - Image Uploading
+- Real-Time Database Management
 - Responsive UI Design
 - Mobile App Architecture
-- State Management
 - REST API Integration
 
 ---
@@ -169,12 +193,11 @@ This project helped strengthen my understanding of:
 ## 🔮 Future Improvements
 
 - 👥 Group Chats
-- 🎙 Voice Messages
-- 📞 Audio & Video Calling
+- 📞 Voice & Video Calling
 - 😀 Emoji Reactions
 - ❤️ Message Reactions
 - 🔍 Chat Search
-- 🌙 Dark Mode
+- 🌙 Theme Customization
 - 🔔 Push Notifications
 - 🟢 Online Status
 - 📌 Pinned Messages
@@ -193,18 +216,12 @@ Feel free to fork this repository and submit a Pull Request.
 
 **Payal Sandeep Chopade**
 
-Computer Engineering Student
+Computer Engineering Student | VIT Pune
 
-Flutter Developer | Learning Backend | Exploring AI & MLOps
+Flutter Developer • Learning Backend • Exploring AI & MLOps
 
 ---
 
 ## ⭐ Show Your Support
 
-If you found this project helpful, consider giving it a ⭐ on GitHub!
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License.
+If you found this project useful, consider giving it a ⭐ on GitHub!
